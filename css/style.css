@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: 'header header header' 'section section section' 'article article article' 'footer footer footer' 'copy copy copy';
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 100vh 600px 400px 300px 30px;
+    font-family: 'Arya', sans-serif;
+}
+
+header {
+    grid-area: header;
+    background-color: #666;
+    height: 100vh;
+}
+
+nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(1, 1, 1, 0.6);
+    padding: 0 50px 0 50px;
+}
+
+nav .logo {
+    width: 50px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 45%;
+}
+
+nav li {
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.1em;
+    letter-spacing: .1em;
+    color: #fff;
+}
+
+nav li:hover {
+    color: #3E97C1;
+    transition: .5s;
+}
+
+section {
+    grid-area: section;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.col1,
+.col2,
+.col3 {
+    background-color: #999;
+    width: 25%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+article {
+    grid-area: article;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.autor1,
+.autor2,
+.autor3,
+.autor4,
+.autor5 {
+    width: 200px;
+    margin: 20px auto;
+    background-color: #999;
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-area1,
+.contact-area2 {
+    width: 50%;
+    text-align: center;
+}
+
+.copy {
+    grid-area: copy;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
